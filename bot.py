@@ -10,7 +10,7 @@ from telegram.error import BadRequest
 from datetime import datetime, timedelta
 
 # MongoDB Setup
-MONGO_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017/")
+MONGO_URI = os.getenv("MONGODB_URI", "mongodb+srv://nhg:nhg@cluster0.rfudxht.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 client = MongoClient(MONGO_URI)
 db = client["file_sharing_bot"]
 
